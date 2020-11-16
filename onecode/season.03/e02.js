@@ -6,12 +6,12 @@ const server = http.createServer((req, res) => {
     if (req.method === "POST")
     {
         res.write('Heisenberg');
-        res.end;
     }
     else if (req.method === "GET"){
         res.write('<h1> Hello World <h1>');
-        res.end;
     }
+    res.end;
+
    })
 
 server.listen(port, () => {
